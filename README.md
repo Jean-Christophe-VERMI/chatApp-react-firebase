@@ -1,2 +1,2 @@
 # react-app-messenger
-react application messenger with auth0
+react application messenger like MVP with Firebase
