@@ -1,0 +1,8 @@
+Composant qui gère les fichiers multimédia dans une conversation
+les fichiers sont stockés sur le cloud à l'enregistement.
+L'url doit etre récupéré pour etre enregistré dans la realtime database à l'instanciation d'un nouveau message
+
+	const pathReference = storage.ref(`images/conversations/${conversationName}/${uUid}`);   (npm install uuid)
+	const url = await pathReference.getDownloadURL()
+
+Au clic sur un boutton Envoyer => un composant message de type multimédia est instancié avec l'url en source
