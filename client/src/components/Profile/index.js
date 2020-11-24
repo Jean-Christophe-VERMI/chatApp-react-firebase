@@ -34,7 +34,10 @@ const Profile = ({urlProfilImage, displayUrlProfilImage}) => {
       };
       fetchUserPicture()
     }
-  }, []);
+    if(urlProfilImage) {
+      setOpen(false);
+    }
+  }, [urlProfilImage]);
 
   const handleOpen = () => {
     setOpen(true);
